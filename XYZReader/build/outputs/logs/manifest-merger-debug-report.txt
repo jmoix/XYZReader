@@ -45,7 +45,6 @@ MERGED from [com.android.support:palette-v7:23.1.1] /Users/jasonmoix/repos/xyzre
 MERGED from [com.android.support:support-v4:23.1.1] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:23.1.1] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [it.sephiroth.android.library.picasso:picasso:2.5.2.4b] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/it.sephiroth.android.library.picasso/picasso/2.5.2.4b/AndroidManifest.xml:11:5-20
 	android:label
 		ADDED from /Users/jasonmoix/repos/xyzreader/XYZReader/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -128,7 +127,6 @@ MERGED from [com.android.support:support-v4:23.1.1] /Users/jasonmoix/repos/xyzre
 MERGED from [com.android.support:recyclerview-v7:23.1.1] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:23.1.1] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [it.sephiroth.android.library.picasso:picasso:2.5.2.4b] /Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/it.sephiroth.android.library.picasso/picasso/2.5.2.4b/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		INJECTED from /Users/jasonmoix/repos/xyzreader/XYZReader/src/main/AndroidManifest.xml
 		INJECTED from /Users/jasonmoix/repos/xyzreader/XYZReader/src/main/AndroidManifest.xml

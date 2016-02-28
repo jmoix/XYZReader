@@ -8,12 +8,12 @@
         "source": "/Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "/Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/white_selectable_item_background_circle.xml",
         "source": "/Users/jasonmoix/repos/xyzreader/XYZReader/src/main/res/drawable/white_selectable_item_background_circle.xml"
+    },
+    {
+        "merged": "/Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_tab_indicator_material.xml"
     },
     {
         "merged": "/Users/jasonmoix/repos/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
