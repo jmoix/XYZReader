@@ -1268,6 +1268,13 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="DetailBodyTextStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColorLink">@color/theme_accent</item>
+        <item name="android:lineSpacingMultiplier">@fraction/detail_body_line_spacing_multiplier</item>
+    </style>
     <style name="DetailTitleTextStyle" parent="@android:style/TextAppearance.Large">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">@dimen/detail_title_text_size</item>
