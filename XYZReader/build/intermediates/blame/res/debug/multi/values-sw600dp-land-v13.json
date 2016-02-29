@@ -13,49 +13,6 @@
                 "from": {
                     "file": "/Users/jasonmoix/repos/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml"
                 }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 99,
-                    "endColumn": 49,
-                    "endOffset": 144
-                },
-                "from": {
-                    "file": "/Users/jasonmoix/repos/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 188,
-                        "endColumn": 49,
-                        "endOffset": 233
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 149,
-                    "endColumn": 54,
-                    "endOffset": 199
-                },
-                "from": {
-                    "file": "/Users/jasonmoix/repos/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 204,
-                    "endColumn": 51,
-                    "endOffset": 251
-                },
-                "from": {
-                    "file": "/Users/jasonmoix/repos/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml"
-                }
             }
         ]
     }

@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -20,11 +21,17 @@ import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
+import android.transition.Slide;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.TranslateAnimation;
 import android.webkit.MimeTypeMap;
 import android.widget.ImageView;
 import android.widget.ScrollView;
@@ -34,6 +41,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
+
+import org.w3c.dom.Text;
 
 /**
  * A fragment representing a single Article detail screen. This fragment is
@@ -51,6 +60,8 @@ public class ArticleDetailFragment extends Fragment implements
     private FloatingActionButton mFloatingActionButton;
     private View mRootView;
     private ImageView mPhotoView;
+    private NestedScrollView mScrollView;
+    private TextView mBody;
     private Toolbar mToolbar;
     private CollapsingToolbarLayout mCollapsingToolbarLayout;
 
@@ -105,6 +116,10 @@ public class ArticleDetailFragment extends Fragment implements
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
 
+        mScrollView = (NestedScrollView) mRootView.findViewById(R.id.scrollview);
+
+        mBody = (TextView) mRootView.findViewById(R.id.article_body);
+
         bindViews();
 
         return mRootView;
@@ -113,6 +128,13 @@ public class ArticleDetailFragment extends Fragment implements
     private void bindViews() {
         if (mRootView == null) {
             return;
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Slide slide = new Slide(Gravity.BOTTOM);
+            slide.addTarget(mBody);
+            slide.setInterpolator(AnimationUtils.loadInterpolator(mScrollView.getContext(), android.R.interpolator.linear_out_slow_in));
+            getActivity().getWindow().setEnterTransition(slide);
         }
 
         TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
@@ -157,6 +179,24 @@ public class ArticleDetailFragment extends Fragment implements
                             .setType("text/plain")
                             .setText("Great Article! " + mCursor.getString(ArticleLoader.Query.TITLE))
                             .getIntent(), getString(R.string.action_share)));
+                }
+            });
+
+            mFloatingActionButton.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    Animation animation;
+                    switch (event.getAction()){
+                        case MotionEvent.ACTION_UP:
+                            animation = AnimationUtils.loadAnimation(v.getContext(), R.anim.fab_not_pressed);
+                            v.startAnimation(animation);
+                            break;
+                        case MotionEvent.ACTION_DOWN:
+                            animation = AnimationUtils.loadAnimation(v.getContext(), R.anim.fab_not_pressed);
+                            v.startAnimation(animation);
+                            break;
+                    }
+                    return false;
                 }
             });
         } else {
